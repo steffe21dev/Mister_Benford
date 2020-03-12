@@ -34,7 +34,7 @@ namespace Mister_Benford
             try
             {
                 //Knappa in urlen
-                string url = "din länk";
+                string url = "https://www.random.org/integer-sets/?sets=1&num=5000&min=1&max=100000&seqnos=on&commas=on&sort=on&order=index&format=html&rnd=new";
 
                 HtmlWeb web = new HtmlWeb();
                 HtmlDocument doc = web.Load(url);
@@ -133,6 +133,8 @@ namespace Mister_Benford
                     (double)((ettor / totalt) * 100), ((tvåor / totalt) * 100), ((treor / totalt) * 100), ((fyror / totalt) * 100),
                     ((femmor / totalt) * 100), ((sexor / totalt) * 100), ((sjuor / totalt) * 100), ((åttor / totalt) * 100), ((nior / totalt) * 100)));
 
+
+                Console.WriteLine("Totalt " + totalt + " tal");
                 Console.WriteLine("\n Vill du få fram html bodien? Klicka enter");
 
                 Console.ReadLine();
