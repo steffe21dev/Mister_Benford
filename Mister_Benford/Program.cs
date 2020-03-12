@@ -13,7 +13,7 @@ namespace Mister_Benford
         static void Main(string[] args)
         {
 
-            Console.WriteLine(FiggleFonts.Ogre.Render("Branford"));
+            Console.WriteLine(FiggleFonts.Ogre.Render("Benford"));
 
 
             double ettor = 0;
